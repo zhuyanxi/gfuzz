@@ -3,11 +3,12 @@ package api
 import (
 	"encoding/json"
 	"fmt"
-	"gfuzz/pkg/gexec"
-	"gfuzz/pkg/oraclert/config"
-	"gfuzz/pkg/oraclert/output"
 	"path"
 	"path/filepath"
+
+	"github.com/zhuyanxi/gfuzz/pkg/gexec"
+	"github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
+	"github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
 )
 
 // Stage indicates how we treat/response to an input and corresponding output

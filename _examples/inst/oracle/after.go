@@ -1,6 +1,6 @@
 package oracle
 
-import oraclert "gfuzz/pkg/oraclert"
+import oraclert "github.com/zhuyanxi/gfuzz/pkg/oraclert"
 
 func TestHello() {
 	oracleEntry := oraclert.BeforeRun()

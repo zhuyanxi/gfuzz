@@ -1,11 +1,12 @@
 package main
 
 import (
-	"gfuzz/pkg/inst"
-	"gfuzz/pkg/utils/gofmt"
 	"io/ioutil"
 	"log"
 	"sync/atomic"
+
+	"github.com/zhuyanxi/gfuzz/pkg/inst"
+	"github.com/zhuyanxi/gfuzz/pkg/utils/gofmt"
 )
 
 func HandleSrcFile(src string, reg *inst.PassRegistry, passes []string) error {

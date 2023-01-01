@@ -1,9 +1,9 @@
 package api
 
 import (
-	"gfuzz/pkg/fuzz/api"
 	"testing"
 	"time"
+	// "github.com/zhuyanxi/gfuzz/pkg/fuzz/api"
 )
 
 type TestInterestHandler struct {
@@ -11,16 +11,20 @@ type TestInterestHandler struct {
 	t          *testing.T
 }
 
-func (m *TestInterestHandler) IsInterested(i *Input, o *Output, isFoundNewSelect bool) (bool, error) {
-	return false, nil
+func (m *TestInterestHandler) IsInterested(i *Input, o *Output, isFoundNewSelect bool) (bool, InterestReason, error) {
+	return false, NoInterest, nil
 }
 
-func (m *TestInterestHandler) HandleInterest(i *InterestInput) (bool, api.InterestReason, error) {
+func (m *TestInterestHandler) HandleInterest(i *InterestInput) (bool, error) {
 	if touched, existed := m.shoulTouch[i]; touched || !existed {
 		m.t.Fail()
 	}
 	m.shoulTouch[i] = true
-	return true, api.NoInterest, nil
+	return true, nil
+}
+
+func (m *TestInterestHandler) CleanAllGExecsRecords() error {
+	return nil
 }
 
 func (m *TestInterestHandler) Check() {

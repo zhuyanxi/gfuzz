@@ -1,10 +1,10 @@
 package mutate
 
 import (
-	"gfuzz/pkg/fuzz/gexecfuzz"
-	"gfuzz/pkg/oraclert/config"
-	"gfuzz/pkg/oraclert/output"
-	"gfuzz/pkg/selefcm"
+	"github.com/zhuyanxi/gfuzz/pkg/fuzz/gexecfuzz"
+	"github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
+	"github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
+	"github.com/zhuyanxi/gfuzz/pkg/selefcm"
 )
 
 type DeterMutateStrategy struct{}

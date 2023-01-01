@@ -1,8 +1,8 @@
 package interest
 
 import (
-	"gfuzz/pkg/oraclert/output"
-	"gfuzz/pkg/selefcm"
+	"github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
+	"github.com/zhuyanxi/gfuzz/pkg/selefcm"
 )
 
 func IsEfcmCovered(efcms []selefcm.SelEfcm, records []output.SelectRecord) bool {

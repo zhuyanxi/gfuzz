@@ -1,9 +1,10 @@
 package oraclert
 
 import (
-	"runtime"
 	"sync/atomic"
 	"time"
+
+	"github.com/zhuyanxi/gfuzz/patch/runtime"
 )
 
 // GetSelEfcmCaseIdx will be instrumented to each select in target program.

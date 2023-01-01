@@ -1,8 +1,9 @@
 package mtxrec
 
 import (
-	oraclert "gfuzz/pkg/oraclert"
 	"sync"
+
+	oraclert "github.com/zhuyanxi/gfuzz/pkg/oraclert"
 )
 
 func Hello() {

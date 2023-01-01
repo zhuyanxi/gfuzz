@@ -2,6 +2,6 @@ package pass
 
 const (
 	oraclertImportName           = "oraclert"
-	oraclertImportPath           = "gfuzz/pkg/oraclert"
+	oraclertImportPath           = "github.com/zhuyanxi/gfuzz/pkg/oraclert"
 	MetadataKeyRequiredOrtImport = "RequiredOrtImport"
 )

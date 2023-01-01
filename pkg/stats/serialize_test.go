@@ -1,9 +1,10 @@
 package stats_test
 
 import (
-	"gfuzz/pkg/stats"
 	"sync"
 	"testing"
+
+	"github.com/zhuyanxi/gfuzz/pkg/stats"
 )
 
 func TestIncHappy(t *testing.T) {

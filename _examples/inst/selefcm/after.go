@@ -1,9 +1,10 @@
 package selefcm
 
 import (
-	oraclert "gfuzz/pkg/oraclert"
 	"sync"
 	"time"
+
+	oraclert "github.com/zhuyanxi/gfuzz/pkg/oraclert"
 )
 
 func SelectWithCh() {

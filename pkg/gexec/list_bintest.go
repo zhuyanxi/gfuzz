@@ -2,10 +2,11 @@ package gexec
 
 import (
 	"bytes"
-	"gfuzz/pkg/utils/fs"
 	"io"
 	"log"
 	"os/exec"
+
+	"github.com/zhuyanxi/gfuzz/pkg/utils/fs"
 )
 
 func ListExecutablesFromTestBinGlobs(globs []string) ([]Executable, error) {

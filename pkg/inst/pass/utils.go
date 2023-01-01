@@ -1,8 +1,9 @@
 package pass
 
 import (
-	"gfuzz/pkg/inst"
 	"go/ast"
+
+	"github.com/zhuyanxi/gfuzz/pkg/inst"
 )
 
 func getSelectorCallerType(iCtx *inst.InstContext, selExpr *ast.SelectorExpr) string {

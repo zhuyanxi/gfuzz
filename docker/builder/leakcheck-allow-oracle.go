@@ -43,7 +43,7 @@ var goroutinesToIgnore = []string{
 	"(*loggingT).flushDaemon",
 	"goroutine in C code",
 	"httputil.DumpRequestOut", // TODO: Remove this once Go1.13 support is removed. https://github.com/golang/go/issues/37669.
-	"gfuzz/pkg/oraclert",
+	"github.com/zhuyanxi/gfuzz/pkg/oraclert",
 }
 
 // RegisterIgnoreGoroutine appends s into the ignore goroutine list. The
@@ -54,7 +54,7 @@ func RegisterIgnoreGoroutine(s string) {
 }
 
 func ignore(g string) bool {
-	if strings.Contains(g, "gfuzz/pkg/oraclert") {
+	if strings.Contains(g, "github.com/zhuyanxi/gfuzz/pkg/oraclert") {
 		return true
 	}
 	sl := strings.SplitN(g, "\n", 2)

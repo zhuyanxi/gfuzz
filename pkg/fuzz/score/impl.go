@@ -1,8 +1,9 @@
 package score
 
 import (
-	"gfuzz/pkg/fuzz/api"
 	"math"
+
+	"github.com/zhuyanxi/gfuzz/pkg/fuzz/api"
 )
 
 const (

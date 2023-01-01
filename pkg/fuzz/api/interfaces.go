@@ -1,7 +1,7 @@
 package api
 
 import (
-	"gfuzz/pkg/utils/bits"
+	"github.com/zhuyanxi/gfuzz/pkg/utils/bits"
 )
 
 // ScoreStrategy is used in interest

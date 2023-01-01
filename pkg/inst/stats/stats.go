@@ -1,6 +1,6 @@
 package stats
 
-import "gfuzz/pkg/stats"
+import "github.com/zhuyanxi/gfuzz/pkg/stats"
 
 type GoOp string
 

@@ -1,8 +1,9 @@
 package defaultp
 
 import (
-	oraclert "gfuzz/pkg/oraclert"
 	aaa "sync"
+
+	oraclert "github.com/zhuyanxi/gfuzz/pkg/oraclert"
 
 	_ "github.com/go-kit/log"
 )

@@ -1,8 +1,9 @@
 package bug
 
 import (
-	"gfuzz/pkg/utils/arr"
 	"testing"
+
+	"github.com/zhuyanxi/gfuzz/pkg/utils/arr"
 )
 
 func TestGetListOfBugIDFromStdoutContentHappyNonBlocking(t *testing.T) {

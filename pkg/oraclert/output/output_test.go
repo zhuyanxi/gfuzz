@@ -1,9 +1,10 @@
 package output
 
 import (
-	"gfuzz/pkg/utils/hash"
 	"sort"
 	"testing"
+
+	"github.com/zhuyanxi/gfuzz/pkg/utils/hash"
 )
 
 func TestOutputHashEq1(t *testing.T) {

@@ -4,18 +4,19 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"gfuzz/pkg/fuzz/api"
-	"gfuzz/pkg/fuzz/config"
-	"gfuzz/pkg/fuzzer/bug"
-	ortCfg "gfuzz/pkg/oraclert/config"
-	ortEnv "gfuzz/pkg/oraclert/env"
-	ortOut "gfuzz/pkg/oraclert/output"
-	"gfuzz/pkg/utils/hash"
 	"io/ioutil"
 	"log"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/zhuyanxi/gfuzz/pkg/fuzz/api"
+	"github.com/zhuyanxi/gfuzz/pkg/fuzz/config"
+	"github.com/zhuyanxi/gfuzz/pkg/fuzzer/bug"
+	ortCfg "github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
+	ortEnv "github.com/zhuyanxi/gfuzz/pkg/oraclert/env"
+	ortOut "github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
+	"github.com/zhuyanxi/gfuzz/pkg/utils/hash"
 )
 
 func Run(ctx context.Context, cfg *config.Config, input *api.Input) (*api.Output, error) {

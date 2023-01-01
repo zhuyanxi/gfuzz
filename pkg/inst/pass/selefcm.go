@@ -2,11 +2,12 @@ package pass
 
 import (
 	"fmt"
-	"gfuzz/pkg/inst"
 	"go/ast"
 	"go/token"
 	"path/filepath"
 	"strconv"
+
+	"github.com/zhuyanxi/gfuzz/pkg/inst"
 
 	"golang.org/x/tools/go/ast/astutil"
 )

@@ -2,14 +2,15 @@ package fuzzer
 
 import (
 	"context"
-	"gfuzz/pkg/fuzz/api"
-	"gfuzz/pkg/fuzz/config"
-	"gfuzz/pkg/fuzz/gexecfuzz"
-	"gfuzz/pkg/gexec"
-	ortconfig "gfuzz/pkg/oraclert/config"
 	"log"
 	"os"
 	"sync/atomic"
+
+	"github.com/zhuyanxi/gfuzz/pkg/fuzz/api"
+	"github.com/zhuyanxi/gfuzz/pkg/fuzz/config"
+	"github.com/zhuyanxi/gfuzz/pkg/fuzz/gexecfuzz"
+	"github.com/zhuyanxi/gfuzz/pkg/gexec"
+	ortconfig "github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
 )
 
 var (
