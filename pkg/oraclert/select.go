@@ -4,7 +4,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zhuyanxi/gfuzz/patch/runtime"
+	"runtime"
 )
 
 // GetSelEfcmCaseIdx will be instrumented to each select in target program.
