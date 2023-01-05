@@ -2,11 +2,10 @@ package terminal
 
 import (
 	"fmt"
+	"gfuzz/pkg/fuzz/api"
 	"os"
 	"text/tabwriter"
 	"time"
-
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/api"
 )
 
 type TerminalReport struct {

@@ -1,13 +1,12 @@
 package api
 
 import (
+	"gfuzz/pkg/fuzz/config"
+	"gfuzz/pkg/fuzz/gexecfuzz"
+	"gfuzz/pkg/gexec"
 	"sync"
 	"sync/atomic"
 	"time"
-
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/config"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/gexecfuzz"
-	"github.com/zhuyanxi/gfuzz/pkg/gexec"
 )
 
 // Context record all necessary information for help fuzzer to prioritize input and record process.

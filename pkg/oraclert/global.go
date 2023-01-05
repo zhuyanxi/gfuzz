@@ -2,14 +2,13 @@ package oraclert
 
 import (
 	"fmt"
+	"gfuzz/pkg/oraclert/config"
+	"gfuzz/pkg/oraclert/env"
+	"gfuzz/pkg/selefcm"
 	"io/ioutil"
 	"os"
 	"strconv"
 	"time"
-
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/env"
-	"github.com/zhuyanxi/gfuzz/pkg/selefcm"
 )
 
 var (
@@ -40,7 +39,7 @@ func init() {
 	if err != nil {
 		time.DurDivideBy = 1
 		fmt.Println("Failed to set time.DurDivideBy. time.DurDivideBy is set to 1. Err:", err)
-	}
+	} 
 
 	if rtConfigFile == "" {
 		return

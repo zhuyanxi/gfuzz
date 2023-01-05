@@ -3,11 +3,10 @@ package fuzzer
 import (
 	"context"
 	"fmt"
+	gLog "gfuzz/pkg/fuzzer/log"
 	"log"
 	"strconv"
 	"sync"
-
-	gLog "github.com/zhuyanxi/gfuzz/pkg/fuzzer/log"
 )
 
 // startWorkers starts parallel workers working on inputCh from fuzzer context.

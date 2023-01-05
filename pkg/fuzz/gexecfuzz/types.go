@@ -1,10 +1,9 @@
 package gexecfuzz
 
 import (
+	"gfuzz/pkg/gexec"
+	"gfuzz/pkg/oraclert/output"
 	"sync"
-
-	"github.com/zhuyanxi/gfuzz/pkg/gexec"
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
 )
 
 // GExecFuzz all information about fuzzing progress for given executable

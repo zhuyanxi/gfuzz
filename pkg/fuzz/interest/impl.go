@@ -2,17 +2,16 @@ package interest
 
 import (
 	"fmt"
+	"gfuzz/pkg/fuzz/api"
+	"gfuzz/pkg/fuzz/gexecfuzz"
+	"gfuzz/pkg/fuzz/mutate"
+	"gfuzz/pkg/fuzz/score"
+	"gfuzz/pkg/utils/bits"
+	"gfuzz/pkg/utils/hash"
+	"gfuzz/pkg/utils/rand"
 	"log"
 	"strconv"
 	"strings"
-
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/api"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/gexecfuzz"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/mutate"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/score"
-	"github.com/zhuyanxi/gfuzz/pkg/utils/bits"
-	"github.com/zhuyanxi/gfuzz/pkg/utils/hash"
-	"github.com/zhuyanxi/gfuzz/pkg/utils/rand"
 )
 
 type InterestHandlerImpl struct {
@@ -25,7 +24,7 @@ func NewInterestHandlerImpl(fctx *api.Context) api.InterestHandler {
 	}
 }
 
-// todo: move new select detection from exec.go to here
+//todo: move new select detection from exec.go to here
 func (h *InterestHandlerImpl) IsInterested(i *api.Input, o *api.Output, isFoundNewSelect bool) (bool, api.InterestReason, error) {
 
 	// If isIgnoreFeedback is true, we treat every feedback as interesting and directly return.

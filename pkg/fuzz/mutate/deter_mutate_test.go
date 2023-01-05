@@ -1,10 +1,9 @@
 package mutate
 
 import (
+	"gfuzz/pkg/oraclert/config"
+	"gfuzz/pkg/oraclert/output"
 	"testing"
-
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
 )
 
 func TestDeterMutateStrategy(t *testing.T) {

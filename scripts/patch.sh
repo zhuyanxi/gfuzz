@@ -1,7 +1,8 @@
 #!/bin/bash -e
-cd "$(dirname "$0")"/.. 
+# cd "$(dirname "$0")"/.. 
+# cd /gfuzz
 
-GOROOT=$(go env GOROOT)
+# GOROOT=$(go env GOROOT)
 GOROOT_SRC=$GOROOT/src
 RUNTIME=$GOROOT_SRC/runtime
 

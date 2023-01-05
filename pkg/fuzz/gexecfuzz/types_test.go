@@ -1,11 +1,10 @@
 package gexecfuzz
 
 import (
+	"gfuzz/pkg/oraclert/config"
+	"gfuzz/pkg/selefcm"
+	"gfuzz/pkg/utils/hash"
 	"testing"
-
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
-	"github.com/zhuyanxi/gfuzz/pkg/selefcm"
-	"github.com/zhuyanxi/gfuzz/pkg/utils/hash"
 )
 
 func TestHasOrtCfgHash(t *testing.T) {

@@ -1,10 +1,9 @@
 package interest
 
 import (
+	"gfuzz/pkg/oraclert/output"
+	"gfuzz/pkg/selefcm"
 	"testing"
-
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
-	"github.com/zhuyanxi/gfuzz/pkg/selefcm"
 )
 
 func TestIsEfcmCoveredHappy(t *testing.T) {

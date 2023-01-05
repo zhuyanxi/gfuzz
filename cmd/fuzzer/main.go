@@ -2,20 +2,19 @@ package main
 
 import (
 	"fmt"
+	"gfuzz/pkg/fuzz/api"
+	"gfuzz/pkg/fuzz/config"
+	"gfuzz/pkg/fuzz/interest"
+	"gfuzz/pkg/fuzz/score"
+	"gfuzz/pkg/fuzzer"
+	gLog "gfuzz/pkg/fuzzer/log"
+	"gfuzz/pkg/gexec"
+	ortconfig "gfuzz/pkg/oraclert/config"
+	"gfuzz/pkg/utils/arr"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
-
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/api"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/config"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/interest"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzz/score"
-	"github.com/zhuyanxi/gfuzz/pkg/fuzzer"
-	gLog "github.com/zhuyanxi/gfuzz/pkg/fuzzer/log"
-	"github.com/zhuyanxi/gfuzz/pkg/gexec"
-	ortconfig "github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
-	"github.com/zhuyanxi/gfuzz/pkg/utils/arr"
 )
 
 var (

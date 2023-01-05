@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"github.com/zhuyanxi/gfuzz/pkg/utils/fs"
+	"gfuzz/pkg/utils/fs"
 )
 
 func listGoSrcByDir(dir string) ([]string, error) {

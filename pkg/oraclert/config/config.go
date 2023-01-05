@@ -2,8 +2,7 @@ package config
 
 import (
 	"encoding/json"
-
-	"github.com/zhuyanxi/gfuzz/pkg/selefcm"
+	"gfuzz/pkg/selefcm"
 )
 
 // Config contains all information need to be passed to fuzz target (consumed by oracle runtime)

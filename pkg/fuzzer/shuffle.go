@@ -1,10 +1,9 @@
 package fuzzer
 
 import (
+	"gfuzz/pkg/gexec"
 	"math/rand"
 	"time"
-
-	"github.com/zhuyanxi/gfuzz/pkg/gexec"
 )
 
 func Shuffle(vals []gexec.Executable) {

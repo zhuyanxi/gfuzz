@@ -2,13 +2,12 @@ package oraclert
 
 import (
 	"fmt"
+	"gfuzz/pkg/oraclert/config"
+	"gfuzz/pkg/oraclert/output"
 	"os"
 	"runtime"
 	"sort"
 	"strings"
-
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/config"
-	"github.com/zhuyanxi/gfuzz/pkg/oraclert/output"
 )
 
 // getChans returns all the channels touched during

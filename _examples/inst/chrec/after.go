@@ -1,6 +1,6 @@
 package chrec
 
-import oraclert "github.com/zhuyanxi/gfuzz/pkg/oraclert"
+import oraclert "gfuzz/pkg/oraclert"
 
 type A struct {
 	aa chan struct{}

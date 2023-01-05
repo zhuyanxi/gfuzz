@@ -1,9 +1,8 @@
 package mutate
 
 import (
+	"gfuzz/pkg/selefcm"
 	"testing"
-
-	"github.com/zhuyanxi/gfuzz/pkg/selefcm"
 )
 
 // func TestMemRandMutateHappy(t *testing.T) {

@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/zhuyanxi/gfuzz/pkg/inst"
-	"github.com/zhuyanxi/gfuzz/pkg/inst/pass"
-	"github.com/zhuyanxi/gfuzz/pkg/inst/stats"
-	"github.com/zhuyanxi/gfuzz/pkg/utils/fs"
+	"gfuzz/pkg/inst"
+	"gfuzz/pkg/inst/pass"
+	"gfuzz/pkg/inst/stats"
+	"gfuzz/pkg/utils/fs"
 	"log"
 	"os"
 	"runtime/pprof"

@@ -2,8 +2,7 @@ package defaultp
 
 import (
 	"fmt"
-
-	oraclert "github.com/zhuyanxi/gfuzz/pkg/oraclert"
+	oraclert "gfuzz/pkg/oraclert"
 )
 
 func getChannel() chan string {

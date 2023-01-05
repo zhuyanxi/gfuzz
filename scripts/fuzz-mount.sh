@@ -6,11 +6,9 @@ GOMOD_DIR=$1
 OUT_DIR=$2
 shift 2
 
+podman build -f docker/fuzzer/Dockerfile -t github.com/zhuyanxi/gfuzz:latest .
 
-
-docker build -f docker/fuzzer/Dockerfile -t gfuzz:latest .
-
-docker run --rm -it \
+podman run --rm -it \
 -v $GOMOD_DIR:/fuzz/target \
 -v $OUT_DIR:/fuzz/output \
 -v $(pwd)/tmp/pkgmod:/go/pkg/mod \

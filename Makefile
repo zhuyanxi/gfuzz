@@ -14,10 +14,10 @@ tidy:
 	go mod tidy
 
 bin/inst: 
-	go build -o bin/inst -ldflags $(BIN_INST_LD_FLAGS) gfuzz/cmd/inst
+	go build -o bin/inst -ldflags $(BIN_INST_LD_FLAGS) /gfuzz/cmd/inst
 
 bin/fuzzer: 
-	go build -o bin/fuzzer -ldflags $(BIN_FUZZER_LD_FLAGS) gfuzz/cmd/fuzzer
+	go build -o bin/fuzzer -ldflags $(BIN_FUZZER_LD_FLAGS) /gfuzz/cmd/fuzzer
 
 test:
 	go test -v gfuzz/pkg/...

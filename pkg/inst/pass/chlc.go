@@ -1,11 +1,10 @@
 package pass
 
 import (
+	"gfuzz/pkg/inst"
 	"go/ast"
 	"go/token"
 	"strings"
-
-	"github.com/zhuyanxi/gfuzz/pkg/inst"
 
 	"golang.org/x/tools/go/ast/astutil"
 )

@@ -1,9 +1,8 @@
 package wgrec
 
 import (
+	oraclert "gfuzz/pkg/oraclert"
 	"sync"
-
-	oraclert "github.com/zhuyanxi/gfuzz/pkg/oraclert"
 )
 
 type RandomStruct struct {
